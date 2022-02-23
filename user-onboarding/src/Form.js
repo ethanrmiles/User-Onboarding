@@ -1,12 +1,14 @@
 import react from 'react'
+
 export default function Form(props) {
-const {
+
+    const { 
 values, 
 submit, 
 change, 
 disabled, 
 errors,
-} = props
+ } = props
 
 const onSubmit = evt => {
     evt.preventDefault()
@@ -14,9 +16,9 @@ const onSubmit = evt => {
 }
 
 const onChange = evt => {
-    const {name, value, type, checked} = evt.target
+    const { name, value, type, checked } = evt.target
     const valueToUse = type === 'checkbox' ? checked : value
-    // change(name, valueToUse)
+    change(name, valueToUse)
     console.log(evt.target)
 }
     return(
