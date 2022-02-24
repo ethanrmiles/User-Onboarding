@@ -1,14 +1,8 @@
 describe("Employee Onboarding App", () => {
-    beforeEach(()=> {
-        cy.visit('lhttp://localhost:3000');
+    beforeEach(() => {
+        cy.visit('http://localhost:3000');
     })
-    //Centralize the getters: 
-    Getters: 
-    // -Name 
-    // -Email 
-    // -Password 
-    // -TermsOfService Box 
-    // -Submit button 
+    
     const nameInput = () => cy.get('input[name=name]');
     const emailInput = () => cy.get('input[name=email]');
     const passwordInput = () => cy.get('input[name=email]');
