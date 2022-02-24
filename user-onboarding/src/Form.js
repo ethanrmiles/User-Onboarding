@@ -19,7 +19,6 @@ const onChange = evt => {
     const { name, value, type, checked } = evt.target
     const valueToUse = type === 'checkbox' ? checked : value
     change(name, valueToUse)
-    console.log(evt.target)
 }
     return(
         <form className='form' onSubmit={onSubmit}>
