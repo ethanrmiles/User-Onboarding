@@ -24,7 +24,7 @@ const onChange = evt => {
         <form className='form' onSubmit={onSubmit}>
             <div className='form-submit'>
                 <h2>Add an employee</h2>
-                <button disabled={disabled}>Submit</button>
+                <button disabled={disabled} id='submitBtn' >Submit</button>
                 <div className='errors'>
                     <div>{errors.name}</div>
                     <div>{errors.email}</div>
