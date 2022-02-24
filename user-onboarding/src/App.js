@@ -45,7 +45,7 @@ const getEmployees = () => {
 }
 
 const postNewEmployee = (newEmployee) => {
-  axios.post('https://reqres.in/api/users').then(resp =>{
+  axios.post('https://reqres.in/api/users', newEmployee).then(resp =>{
     setEmployees([resp.details, ...employees]);
     console.log(resp.details)
     setFormValues(initialFormValues)
