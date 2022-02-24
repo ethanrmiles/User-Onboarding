@@ -6,20 +6,18 @@ describe("Employee Onboarding App", () => {
     const nameInput = () => cy.get('input[name=name]');
     const emailInput = () => cy.get('input[name=email]');
     const passwordInput = () => cy.get('input[name=email]');
-    const foobarInput = () => cy.get('input[name=foobar]');
     const submitButton = () => cy.get('button[id="submitBtn"]');
     const tOSBox = () => cy.get('input[type=checkbox]')
     
 it('sanity check to make sure that tests work', () => {
-    expect(1+2).toBe.equal(3);
-    expect(2+2).not.toBe.equal(5)
+    expect(1+2).to.equal(3);
+    expect(2+2).not.to.equal(5)
 })
 //The Proper Elements are showing: 
 it('The proper elements are showing', () => {
     nameInput().should('exist');
     emailInput().should('exist');
     passwordInput().should('exist');
-    foobarInput().should('exist');
     submitButton().should('exist');
     tOSBox().should('exist');
 })
